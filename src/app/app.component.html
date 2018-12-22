@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let item of data">
+    <input type="text" [value]="item.name" #itemValue />
+    <button (click)="onSave(item, itemValue.value)">Save</button>
+    &nbsp;&nbsp;
+    {{ item.name }}
+  </li>
+</ul>
